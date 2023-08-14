@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: #888;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+  margin: 0;
+}
+
+.swiper-pagination-fraction {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  font-family: "Teko", sans-serif;
+}
+
+/* Estilo para a cor de texto transparente */
+.swiper-pagination-current {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+}
+
+.blind-overlay {
+  z-index: 1 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ccc;
+  font-size: 5px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.swiper-button-prev {
+  font-size: 5px;
+}
+
+.swiper-button-next {
+  font-size: 5px;
+}
+
+.about .exp-img .img::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: -1;
+}
+
+.letra {
+  font-size: 140px;
+  font-weight: 800;
+  background: url("/exp.jpg") no-repeat;
+  background-position: 18% 65%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  font-family: "Teko", sans-serif;
+}
+
+.teko {
+  font-family: "Teko", sans-serif;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.playfont {
+  font-family: "Playfair Display", serif;
+}
+
+.numb {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #b19777;
+}
+
+.numb2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #005ed3;
+}
+
+.numb2:hover {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.animation {
+  background-image: url("/2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.animation:hover {
+  background-color: red !important;
+  visibility: visible;
+  animation-delay: 0.3s !important;
+  animation-name: fadeInUp;
+}
+
+.box:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* .skills-circle {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-75px) translateY(-98px);
+  -ms-transform: translateX(-75px) translateY(-98px);
+  transform: translateX(-75px) translateY(-98px);
+  font-size: 40px;
+  font-weight: 300;
+} */
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #005ed3 !important ;
+  border: 4px solid #005ed3 !important;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  background: rgba(255, 255, 255, 0.1) !important;
+  fill: #fff;
+  font-size: 20px !important;
+  font-family: "Teko", sans-serif;
+}
+
+.skills-circle {
+  width: 50%;
+  margin: 0 auto;
+  border: 4px solid #005ed3;
+  border-radius: 50%;
+  /* Outros estilos desejados */
+}
+
+.imagem .social {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background-color: #fff;
+  padding: 20px 10px;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.imagem:hover .social {
+  opacity: 1;
+  left: 0;
+}
+
+.img-cara::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.img-cara img:hover {
+  background-color: #111 !important;
+}
+
+.cont::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  background: #f7f7f7;
+  top: 0;
+  width: 5%;
+  right: 0;
+}
+
+.cont::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  background: #f7f7f7;
+  top: 0;
+  width: 75%;
+  left: 0;
+}

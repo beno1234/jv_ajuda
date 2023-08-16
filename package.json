@@ -1,6 +1,7 @@
 {
   "name": "my-react-app",
   "private": true,
+  "homepage": "https://shimmering-manatee-a263c8.netlify.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

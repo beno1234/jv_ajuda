@@ -1,24 +1,24 @@
-/* 
-import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NavBar } from "./components/Nav";
-import About from "./components/about";
-import Services from "./components/services";
-import Skill from "./components/skill"; */
-/* import Page2 from "./pages/About/Page2";
-import Empresa from "./pages/empresa/Empresa";
-import Testimonials from "./pages/team/testimonials"; */
-import { SectionJV } from "./pages/SectionJV";
-/* import Footer from "./components/Footer"; */
+import Home from "./pages/Home/Home";
+import Footer from "./components/Footer";
+import HeaderCarousel from "./components/Header";
+import Sobre from "./pages/sobre/Sobre";
+import Empreedimentos from "./pages/Empreendimentos/Empreedimentos";
 
 function App() {
   return (
     <>
-      {/*       <Page2 />
-      <Empresa />
-      <Testimonials /> */}
-
-      <SectionJV></SectionJV>
-      {/*       <Footer /> */}
+      <BrowserRouter>
+        <NavBar />
+        <HeaderCarousel />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/empreendimentos" element={<Empreedimentos />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

@@ -25,8 +25,8 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Pages
+        <a href="/" className="flex items-center">
+          Home
         </a>
       </Typography>
       <Typography
@@ -35,8 +35,8 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Account
+        <a href="/sobre" className="flex items-center">
+          Sobre
         </a>
       </Typography>
       <Typography
@@ -45,18 +45,8 @@ export function NavBar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Blocks
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          Docs
+        <a href="/empreendimentos" className="flex items-center">
+          Empreendimentos
         </a>
       </Typography>
     </ul>
@@ -75,7 +65,7 @@ export function NavBar() {
 
         <div className="hidden lg:flex items-center ">
           <div className="pr-10 ">{navList}</div>
-          <div className="hidden lg:flex gap-4 border-l-2 border-l-emerald-300 pl-10">
+          <div className="hidden lg:flex gap-4 border-l-2 border-l-blue-900 pl-10">
             <FaFacebook className="text-white text-sm" />
             <FaTwitter className="text-white text-sm" />
             <FaYoutube className="text-white text-sm" />

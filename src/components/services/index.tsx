@@ -2,64 +2,48 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="py-28 bg-gradient-to-l from-blue-800 to-black">
-      <div className="px-16">
-        <div className="relative mx-auto mb-20 text-center">
-          <div className="flex justify-center">
-            <div className="lg:col-span-6 md:col-span-8 sm:col-span-10">
-              <h6 className="text-white font-light text-base uppercase tracking-[4px] mb-3 teko">
-                Nossos pontos fortes
-              </h6>
-              <h4 className="font-medium text-white text-4xl tracking-[2px] playfont">
-                Infraestrutura completa
-              </h4>
-            </div>
-          </div>
+    <section className="py-10 sm:py-20 md:py-24 lg:py-28 bg-[#f8f4f3]">
+      <div className="px-4 md:px-8 lg:px-16 xl:px-32">
+        <div className="text-center mb-10">
+          <h6 className="text-blue-800 font-light text-sm md:text-base lg:text-lg uppercase tracking-[2px] teko">
+            Nossos pontos fortes
+          </h6>
+          <h4 className="font-medium text-2xl md:text-4xl tracking-[1px] playfont">
+            Infraestrutura completa
+          </h4>
         </div>
-        <div className="animation flex overflow-hidden">
-          <div className="lg:col-span-3 md:col-span-6 py-16 px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-[.4s] hover:bg-[#00000099] hover:text-white box">
-            <h2 className="teko font-normal numb">01</h2>
-            <h6 className="mb-5">Iluminação em Led</h6>
-            <p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+          <div className="py-10 px-6 md:px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] hover:text-white box">
+            <h2 className="teko font-normal text-lg md:text-xl numb">01</h2>
+            <h6 className="mb-3 md:mb-4">Iluminação em Led</h6>
+            <p className="text-sm md:text-base">
               Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
               consequat.
             </p>
-            <a href="#0" className="text-xl mt-8 teko font-normal">
-              Ler Mais
-            </a>
           </div>
-          <div className="lg:col-span-3 md:col-span-6 py-16 px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-[.4s] hover:bg-[#00000099] hover:text-white box">
-            <h2 className="teko font-normal numb">02</h2>
-            <h6 className="mb-5">Energia elétrica e iluminação</h6>
-            <p>
+          <div className="py-10 px-6 md:px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] hover:text-white box">
+            <h2 className="teko font-normal text-lg md:text-xl numb">02</h2>
+            <h6 className="mb-3 md:mb-4">Energia elétrica e iluminação</h6>
+            <p className="text-sm md:text-base">
               Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
               consequat.
             </p>
-            <a href="#0" className="text-xl mt-8 teko font-normal">
-              Ler Mais
-            </a>
           </div>
-          <div className="lg:col-span-3 md:col-span-6 py-16 px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-[.4s] hover:bg-[#00000099] hover:text-white box">
-            <h2 className="teko font-normal numb">03</h2>
-            <h6 className="mb-5">Asfalto, guias e sarjetas</h6>
-            <p>
+          <div className="py-10 px-6 md:px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-300 hover:bg-[#00000099] hover:text-white box">
+            <h2 className="teko font-normal text-lg md:text-xl numb">03</h2>
+            <h6 className="mb-3 md:mb-4">Asfalto, guias e sarjetas</h6>
+            <p className="text-sm md:text-base">
               Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
               consequat.
             </p>
-            <a href="#0" className="text-xl mt-8 teko font-normal">
-              Ler Mais
-            </a>
           </div>
-          <div className="lg:col-span-3 md:col-span-6 py-16 px-10 h-full bg-white border border-solid border-[#eee] border-r-0 transition-all duration-[.4s] hover:bg-[#00000099] hover:text-white box">
-            <h2 className="teko font-normal numb">04</h2>
-            <h6 className="mb-5">Sinalização Viária</h6>
-            <p>
+          <div className="py-10 px-6 md:px-10 h-full bg-white border border-solid border-[#eee] transition-all duration-300 hover:bg-[#00000099] hover:text-white box">
+            <h2 className="teko font-normal text-lg md:text-xl numb">04</h2>
+            <h6 className="mb-3 md:mb-4">Sinalização Viária</h6>
+            <p className="text-sm md:text-base">
               Cras mollis turpis a ipsum ultes, nec cond imentum ipsum
               consequat.
             </p>
-            <a href="#0" className="text-xl mt-8 teko font-normal">
-              Ler Mais
-            </a>
           </div>
         </div>
       </div>

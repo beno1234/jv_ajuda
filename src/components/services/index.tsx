@@ -1,5 +1,3 @@
-import React from "react";
-
 const Services = () => {
   return (
     <section className="py-10 sm:py-20 md:py-24 lg:py-28 bg-[#f8f4f3]">

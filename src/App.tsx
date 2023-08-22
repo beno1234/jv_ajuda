@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { NavBar } from "./components/Nav";
+import NavBar from "./components/Nav";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer";
-import HeaderCarousel from "./components/Header";
+import HeaderSection from "./components/Header";
 import Sobre from "./pages/sobre/Sobre";
 import Empreedimentos from "./pages/Empreendimentos/Empreedimentos";
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-        <HeaderCarousel />
+        <HeaderSection />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />

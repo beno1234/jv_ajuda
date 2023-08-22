@@ -1,11 +1,13 @@
-import Page2 from "../About/Page2";
+import TeamSection from "../../components/Team/Team";
+import AboutUsSection from "../About/Page2";
 import Empresa from "../empresa/Empresa";
 
 const Sobre = () => {
   return (
     <>
-      <Page2 />
+      <AboutUsSection />
       <Empresa />
+      <TeamSection />
     </>
   );
 };

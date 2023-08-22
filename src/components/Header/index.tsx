@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeaderSection = () => {
   return (
     <header className="h-[100vh]">
